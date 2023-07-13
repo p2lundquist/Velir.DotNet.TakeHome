@@ -16,8 +16,9 @@ namespace TakeHome.Controllers
             return View();
         }
 
+        [HttpPost]
         [ValidateInput(true)]
-        public ActionResult Feedback(FeedbackForm form)
+        public ActionResult Index(FeedbackForm form)
         {
             if (ModelState.IsValid)
             {
